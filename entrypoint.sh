@@ -19,4 +19,4 @@ chmod 775 /var/lib/dhcp
 chmod 664 "$LEASE_FILE"
 
 # Execute DHCP server in IPv4 mode
-exec dhcpd -user dhcpd -group dhcpd -f -4 -pf "$PID_FILE" -cf "$CONFIG_FILE" $INTERFACESv4
+exec dhcpd -user dhcpd -group dhcpd -f -d -4 -pf "$PID_FILE" -cf "$CONFIG_FILE" $INTERFACESv4
